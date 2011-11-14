@@ -85,12 +85,13 @@ var UNSHRED = (function(){
 
     u.go = function(){
         var ctx = canvas.getContext("2d"),
-        img_data,smooth_data,
+        img_data,
         strip_matches = [],
-        i,j,index,
+        i,j,
         strips = img.width/STRIP_WIDTH,
         ordered, last_ordered,
-        best_r_match, best_l_match, best_r_score, best_l_score;
+        best_r_match, best_l_match,
+        best_r_score, best_l_score;
 
         // copy image to canvas (image is display:none)
         canvas.width = img.width;
